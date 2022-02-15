@@ -1,0 +1,321 @@
+/* General styles */
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*
+*::before,
+*::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    
+}
+
+img{
+    display: block;
+    object-fit: cover;
+}
+
+.site__content {
+    flex-grow: 1;
+}
+
+/* Container */
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Section films app */
+
+.films__main {
+    width: 1230px;
+    width: 100%;
+    height: 720px;
+    margin: 0 5px;
+    margin-bottom: 20px;
+    background-image: url(../images/home2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/*  Film main first  */
+
+.films__main-first {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 60px;
+    
+}
+
+.films__main-link {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.films__main-link::before {
+    position: absolute;
+    content: url(../images/youtuber-848\ \(2\).png);
+    left: 0;
+    transform: translateX(-120%);
+    
+}
+
+.films__form {
+    display: flex;
+    margin: 0;
+    padding: 20px 50px;
+    
+}
+
+.films-search-input {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding: 4px 150px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.films__button {
+    position: absolute;
+    transform: translate(250%, 18%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 60, 0);
+    color: #fff;
+    cursor: pointer; 
+}
+
+.films__button:hover {
+    background-color: black;
+}
+
+
+.sign-link {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+    background-color: yellow;
+    color: #fff;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(255, 60, 0);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sign-link:hover {
+    background-color: black;
+}
+
+/* Film main second */
+
+.films__main-second {
+    margin: 0;
+    padding: 130px;
+    
+}
+
+.films__main-second__heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    color: #fff;
+}
+
+.films__main-second__name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-weight: bolder;
+    max-width: 500px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    color: #fff;
+}
+
+.book-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(255, 60, 0);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.book-link:hover {
+    background-color: black;
+}
+
+.films-new {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    color: #fff;
+}
+
+.films-line {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 1px;
+    border: none;
+    background-color: rgb(184, 46, 11);
+}
+
+/* Films list */
+
+.films {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 60px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #fff;
+}
+
+.film {
+    font-family: 'Poppins', sans-serif;
+    max-width: 200px;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    background-color: transparent;
+}
+
+.film__image {
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    
+}
+
+.film__image:hover {
+    transform: scale(1.020);
+}
+
+.film__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 3px;
+    padding: 0;
+}
+
+.film__year {
+    display: block;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.film__box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.film__type {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+
+.film__more-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0 18px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(255, 60, 0);
+    color: #fff;
+}
+
+.film__more-info:hover {
+    background-color: #fff;
+    color: rgb(255, 60, 0);
+}
+
+

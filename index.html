@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Movies</title>
+</head>
+<body>
+    
+    <!-- Films app -->
+    
+    <section class="films-app">
+        <div class="container">
+            <div class="films__main">
+                
+                <!-- Film main first -->
+                
+                <div class="films__main-first">
+                    
+                    <a class="films__main-link" href="index.html">Movies</a>
+                    
+                    <form class="films__form" autocomplete="off">
+                        
+                        <input class="films-search-input" type="text" placeholder="Search.." />
+                        
+                        <button class="films__button" type="submit">Search</button>
+                        
+                    </form>
+                    
+                    <a class="sign-link" href="index.html" >Sign in</a>
+                    
+                </div>
+                
+                <!-- Film main second -->
+                
+                <div class="films__main-second">
+                    <h2 class="films__main-second__heading">MARVEL UNIVERSE</h2>
+                    
+                    <h3 class="films__main-second__name">Avengers: Infinity War</h3>
+                    
+                    <a class="book-link" href="index.html">Book Now</a>
+                </div>
+            </div>
+            
+            <h4 class="films-new">NEW MOVIES</h4>
+            
+            <hr class="films-line">
+            
+            
+            <!-- Film list -->
+            
+            <ul class="films"></ul>
+            
+            <!-- Template -->
+            
+            <template id="film-template">  
+                <li class="film">
+                    
+                    <img class="film__image"
+                    src="https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg" 
+                    alt="poster"
+                    width="200"
+                    height="300">
+                    
+                    <h3 class="film__title">Smth</h3>
+                    
+                    <time class="film__year">2017</time>
+                    
+                    <div class="film__box"> 
+                        
+                        <p class="film__type">smth</p>
+                        
+                        <button class="film__more-info">More</button>
+                        
+                    </div>
+                </li>
+            </template>
+            
+        </div>
+    </section>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
