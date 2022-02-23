@@ -45,7 +45,7 @@ const renderFilms = (array, element) =>{
 async function getFilms(){
     
     try {
-        const response = await fetch("http://www.omdbapi.com/?apikey=" + API_KEY + "&s=" + searchQuery + "&page=" + page);
+        const response = await fetch("https://www.omdbapi.com/?apikey=" + API_KEY + "&s=" + searchQuery + "&page=" + page);
         
         const data = await response.json();
         
@@ -74,7 +74,7 @@ async function getFilms(){
         
     } catch (err) {
         elFilmList.textContent = "The movie is not found"
-        
+
     }
 };
 
